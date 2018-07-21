@@ -1,0 +1,5 @@
+- name: Creates Soft link
+  file:
+    src: "/opt/apps/frontend/releases/front-end-4.0"
+    dest: "/opt/frontend"
+    state: link

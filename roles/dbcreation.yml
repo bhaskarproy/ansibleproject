@@ -1,0 +1,7 @@
+- name: setting MYSQL database
+  hosts: catalogue
+  become: true
+  roles:
+    - { role: geerlingguy.mysql }
+
+    

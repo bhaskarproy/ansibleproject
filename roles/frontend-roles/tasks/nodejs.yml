@@ -1,0 +1,10 @@
+- name: install nodejs
+  unarchive:
+    src: https://nodejs.org/dist/v4.8.6/node-v4.8.6-linux-x64.tar.xz
+    dest: /usr/local 
+    remote_src: yes
+- name: Creates soft link
+  file:
+    src: "/usr/local/node-v4.8.6-linux-x64/bin/node"
+    dest: "/usr/local/bin/nodejs"
+    state: link

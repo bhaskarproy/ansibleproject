@@ -1,0 +1,3 @@
+---
+  - import_playbook: frontendapp.yml
+  - import_playbook: catalogue.yml

@@ -1,0 +1,12 @@
+- name: Install list of packages
+  apt: 
+    name: "{{item}}"
+    state: installed
+    update_cache: yes
+  with_items:
+       - wget
+       - curl
+       - git
+       - build-essential
+       - unzip
+       - npm

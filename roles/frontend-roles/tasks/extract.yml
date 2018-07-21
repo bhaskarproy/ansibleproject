@@ -1,0 +1,4 @@
+- name: Extract v4.0.zip into /opt/apps/frontend/releases
+  unarchive:
+    src: /opt/apps/frontend/releases/front-end-4.0.zip
+    dest: /opt/apps/frontend/releases/

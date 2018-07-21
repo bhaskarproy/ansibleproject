@@ -1,0 +1,8 @@
+- name: Creates directory
+  file:
+    path: /opt/apps/frontend/releases
+    state: directory
+    owner: devops
+    group: root
+    mode: 0777
+    recurse: yes

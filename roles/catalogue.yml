@@ -1,0 +1,6 @@
+---
+ - name: Catalogue App Install
+   hosts: catalogue
+   become: true
+   roles:
+     - catalogue-roles

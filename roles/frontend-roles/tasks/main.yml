@@ -1,0 +1,8 @@
+---
+# tasks file for frontend-roles
+  - import_tasks: directory.yml
+  - import_tasks: packages.yml
+  - import_tasks: untar.yml
+  - import_tasks: symlink.yml
+  - import_tasks: nodejs.yml
+  - import_tasks: npmappstart.yml

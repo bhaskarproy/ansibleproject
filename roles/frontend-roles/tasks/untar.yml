@@ -1,0 +1,6 @@
+- name: download release v4.0
+  unarchive:
+    src: https://github.com/udbc/front-end/archive/v4.0.zip
+    dest: /opt/apps/frontend/releases
+    remote_src: yes
+   

@@ -1,0 +1,6 @@
+---
+ - name: Frontend App Install
+   hosts: frontend
+   become: true
+   roles:
+     - frontend-roles

@@ -1,0 +1,14 @@
+- name: Run Realtime application
+  npm:
+    path: /opt/frontend
+    state: present
+- name: Get Serivce from GIT and Start application using Service under /etc/init.under
+  get_url:
+    url: https://raw.githubusercontent.com/udbc/front-end/master/scripts/frontend
+    dest: /etc/init.d/
+    owner: root
+    mode: 777
+- name: start Service under /etc/init.d/frontend
+  service: 
+    name: frontend
+    state: started
